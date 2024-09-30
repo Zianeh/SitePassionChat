@@ -1,0 +1,593 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*  header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.nav ul li a:hover {
+    color: #e2e60d;
+}
+
+.connexion button {
+    padding: 10px 20px;
+    background-color: #f7b91b;
+    color: rgb(8, 0, 0);
+    border: solid;
+    font-size: 25px;
+    border-radius: 15px 15px;
+    cursor: pointer;
+}
+
+.connexion button:hover {
+    background-color: #ddab05;
+}
+
+/* banniere */
+
+.banner-global {
+
+    position: relative;
+    width: 100%;
+}
+
+.banner-global img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    /* Place le texte verticalement au centre */
+    font-size: larger;
+    right: 30%;
+    transform: translateY(-50%);
+    /* Centre le texte verticalement */
+    color: white;
+    /* Couleur du texte */
+    padding: 20px;
+    border-radius: 8px;
+    /* Coins arrondis */
+    text-align: center;
+}
+
+
+
+
+
+/* 1ere SECTION */
+
+h1 {
+    text-align: center;
+    font-size: 300%
+}
+
+.photo-section {
+    width: 100%;
+    padding: 5px;
+    background-image: url(/assets/image/petitepattedechat.png);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 70px;
+    padding: 20px;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.photo-item {
+    background-color: #f7f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    gap: 40px;
+}
+
+.photo-item img {
+    width: 100%;
+    /* L'image prend toute la largeur définie par .photo-item */
+    height: 400px;
+    object-fit: cover;
+    /*  S'assure que l'image occupe toute la zone */
+    border-radius: 8px;
+    clip-path: circle(70%);
+}
+
+.photo-item p {
+    /* margin-top: 10px; */
+    margin: auto;
+    width: 80%;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    /* Texte aligné à gauche, sous l'image */
+    word-wrap: break-word;
+    /* Le texte passe à la ligne automatiquement */
+}
+
+.photo-item p::first-letter {
+    font-size: 40px;
+    color: #ddda14;
+    float: left;
+    margin-right: 8px;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .cat-breed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+/* section */
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-image: url(/assets/image/petitepattedechat.png);
+    background-color: gray;
+}
+
+.column {
+    flex: 1;
+    /* Chaque colonne prend un espace égal */
+    position: relative;
+}
+
+.text-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-column img {
+    align-items: center;
+    width: 80%;
+    /* L'image prend toute la largeur de la colonne */
+    height: 80%;
+    /* L'image prend toute la hauteur de la colonne */
+    object-fit: cover;
+    /* Couvre la zone sans déformer l'image */
+    border: solid;
+    border-radius: 70px 70px;
+}
+
+.text-box {
+    width: 80%;
+    padding: 20px;
+    border: 8px solid #ccc;
+    /* Bordure pour le cadre */
+    border-radius: 8px;
+    /* Coins arrondis */
+    background-color: #f9f9f9;
+    /* Couleur de fond du cadre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre pour le cadre */
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.learn-more {
+
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 30px 30px;
+    background-color: #e9d414;
+    /* Couleur de fond du bouton */
+    color: rgb(9, 0, 0);
+    /* Couleur du texte du bouton */
+    cursor: pointer;
+    /* Curseur en forme de main au survol */
+}
+
+.learn-more:hover {
+    background-color: #e9cb0c;
+    /* Couleur de fond au survol */
+}
+
+
+
+
+/* 2eme section */
+
+.chat-cercle {
+    flex: 1;
+    /* Chaque colonne prend un espace égal */
+    position: relative;
+    background-color: rgb(43, 41, 53);
+}
+
+.chat-cerclegrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chat-cerclegrid img {
+    width: 300px;
+    max-width: 300px;
+    clip-path: circle(40%);
+    margin: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+/* 3 eme section */
+
+.Presentationh2{
+    font-size: x-large;
+    text-align: center;
+}
+.section3 h2 {
+    font-size: x-large;
+    
+    text-align: center;
+
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+}
+
+.section3-1 {
+    text-align: center;
+    border: 5px solid;
+}
+
+.section3-1 img {
+    width: 90%;
+    height: auto;
+    border: 2px solid #080101;
+    border-radius: 8px;
+}
+
+.section3-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.section3-list li {
+    background-color: #f1eaea;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.section3-list p {
+    font-weight: 600;
+}
+
+
+
+
+/* https://www.woopets.fr/ */
+
+
+/* 5 eme section */
+
+.section-5 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px;
+    gap: 20px;
+}
+
+.section-5grid h2 {
+    text-align: center;
+}
+
+.section-5grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    border: solid;
+}
+
+.section-5list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none; 
+    
+}
+
+.section-5list img {
+    width: 100%;
+    /* L'image prend toute la largeur définie par .photo-item */
+    height: 200px;
+    object-fit: cover;
+    /*  S'assure que l'image occupe toute la zone */
+    border-radius: 8px;
+    max-width: 150px;
+    margin-right: 20px;
+    
+}
+
+.section-5article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* test */
+
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.section1 .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section1 .content img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.section1 .text h2 {
+    margin-bottom: 10px;
+}
+
+.section1 .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.section1 .image-grid li {
+    list-style: none;
+}
+
+.section1 .image-grid img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.section2 .image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section2 .image-column li {
+    list-style: none;
+}
+
+.section2 .image-column img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.section2 .button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section2 .button:hover {
+    background-color: #0056b3;
+} */
+
+
+
+
+
+
+
+/* bulle qui s affiche */
+.texte-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+#description {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.texte-container:hover #description {
+    display: block;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #ddec0a;
+}
+
+footer .reseaux ul {
+    display: flex;
+}
+
+footer .reseaux ul li {
+    margin-right: 15px;
+}
+
+footer .reseaux ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .rubrique ul li a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer .rubrique ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* newletter */
+
+footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .newsletter form {
+    display: flex;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #fbff0b;
+    color: rgb(3, 0, 0);
+    border: solid;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer .newsletter button:hover {
+    background-color: #f0910b;
+}
+
+/* section 2 */
+.h2-1 {
+    text-align: center;
+    font-size: 200%;
+}

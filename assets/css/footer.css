@@ -1,0 +1,100 @@
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #ddec0a;
+}
+
+footer .reseaux ul {
+    display: flex;
+}
+
+footer .reseaux ul li {
+    margin-right: 15px;
+}
+
+footer .reseaux ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .rubrique ul li a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer .rubrique ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* newletter */
+
+footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .newsletter form {
+    display: flex;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #fbff0b;
+    color: rgb(3, 0, 0);
+    border: solid;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer .newsletter button:hover {
+    background-color: #f0910b;
+}
+
+                       /* section 2 */
+.h2-1{ 
+    text-align: center;
+    font-size: 200%;
+}

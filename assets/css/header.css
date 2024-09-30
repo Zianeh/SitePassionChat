@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT';   
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+
+/*  header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+    
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    
+}
+
+.nav ul li a:hover {
+    color: #e2e60d;
+}
+
+.connexion button {
+    padding: 10px 20px;
+    background-color: #f7b91b;
+    color: rgb(8, 0, 0);
+    border: solid;
+    font-size: 25px;
+    border-radius: 15px 15px;
+    cursor: pointer;
+}
+.connexion button:hover {
+    background-color: #ddab05;
+}
